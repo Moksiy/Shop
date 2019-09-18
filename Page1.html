@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Проектик</title>
+    <link rel="stylesheet" href="Styles.css">
+</head>
+<body>
+    <header>
+        <div id="logo" onclick="slowScroll('#top')"> <span>GuitarShop</span></div>
+        <div id="about">
+            <a href="#" title="Информация" onclick="slowScroll('#main')">Информация</a>
+            <a href="#" onclick="slowScroll('#overview')" title="Магазин">Магазин</a>
+            <a href="#" onclick="slowScroll('#faq')" title="Ответы на вопросы">FAQ</a>
+            <a href="#" onclick="slowScroll('#contacts')" title="Контакты">Контакты</a>
+            <a href="Main.html" onclick="slowScroll('#feedback')" title="Обратная связь">Обратная связь</a>
+        </div>
+    </header>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+        function slowScroll(id)
+        {
+            $('html, body').animate({
+                scrollTop: $(id).offset().top
+            },500);
+        }
+        $(document).on("scroll", function ()
+        {
+            if($(window).scrollTop() === 0)
+                $("header").removeClass("fixed");
+                else 
+                $("header").attr("class","fixed");
+        });
+    </script>
+    
+ <div id="head">
+ 
+ </div>   
+
+ <div>
+     
+ </div>
+
+<div id="contacts">
+    <center><h5>Контакты</h5></center>
+
+    <div id="contacts_text">
+        <br> <br>
+Москва-акустика, м. Дмитровская. ул. Б. Новодмитровская, 36/26. Дизайн-завод Флакон, Workshop-кластер <br>
+8-495-517-43-64 <br> <br>
+Санкт-Петербург - акустика, м. Чернышевская, ул. Кирочная 3 <br>
++7-904-510-63-42 <br> <br>
+Москва-Электрогитары, м. Дмитровская. ул. Б. Новодмитровская, 36/15. Дизайн-завод Флакон, Workshop-кластер <br>
++7-977-151-84-21 <br> <br>
+Режим работы: ежедневно с 11:00 до 20:00, без выходных. <br>
+
+    </div>
+    <div id="Map">
+        <br>
+        <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A9f9ba7708758814e3c921203498c23ced867340157ddb66066aa6033e5bed03c&amp;source=constructor" width="450" height="300" frameborder="0"></iframe>
+    </div>
+</div>
+
+<div id="feedback">
+            <center><h5>Обратная связь</h5></center>
+            <form id="input">
+            <label for="name">Имя <span>*</span></label><br>
+            <input type="text" placeholder="Введите имя" name ="name" id="name"><br>
+        
+            <label for="email">Ваша почта <span>*</span></label><br>
+            <input type="email" placeholder="Введите email" name ="email" id="email"><br>
+        
+            <label for="message">Сообщение <span>*</span></label><br>
+            <input type="textarea" placeholder="Введите ваше сообщение" name ="message" id="message"><br>
+            <div id="mess_send" class="btn">Отправить</div>
+            </form>
+</div>
+</body>
+</html>

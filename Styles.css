@@ -1,0 +1,369 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto|Suez+One&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+}
+
+body, html {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    background-color: #fafafa;
+    font-family: Trebuchet MS, Helvetica;
+}
+
+header {
+    width: 100%;
+    padding: 10px 0.5% 0px 0.5%;
+    background: transparent;
+    float: left;
+    position: fixed;
+}
+
+header #logo {
+    color: #FFF;
+    cursor: pointer;
+}
+
+header #logo span{
+    font-size: 1.7em;
+    line-height: 40px;
+    margin-left: 40px;
+    font-family: 'Suez One', serif;
+}
+
+@media (min-width: 851px) {
+    #logo{
+        float:left;
+        width: 30%;
+        font-size: 1.5em;
+    }
+    #about {
+        float: right;
+        width: 70%; 
+    }
+}
+
+@media (max-width: 850px) {
+    #logo{
+        margin-top: 15px;
+        width: 100%;
+        font-size: 1.4em;
+    }
+    #about{
+        float:left;
+        width: 100%;
+    }
+}
+
+#about{
+    text-align: center;
+    font-size: 1.3em;
+    line-height: 40px;
+    margin-bottom: 10px;
+}
+
+#about > a {color:#FFF}
+
+#about > a:hover {
+    color:#9b9797;
+    text-decoration: underline;
+}
+
+#about > a:not(:last-child) {
+    margin-right: 7%;
+}
+
+.fixed {
+    z-index: 5000;
+    background-color: #fff;
+    border-bottom: 1px solid silver;
+}
+
+header.fixed #logo {
+    color:#343434;
+}
+
+.fixed #about a {color: #343434;}
+.fixed #about a:hover {color: #343434;}
+
+#top {
+    width: 100%;
+    height: 1000px;
+    background-image: url(https://images.wallpaperscraft.ru/image/gitara_struny_metall_derevyannyy_17562_1920x1080.jpg);
+    background-blend-mode: multiply;
+    background-color: #c4e4ff;
+    background-size: cover;
+    text-align: center;
+    color: #FFF;
+    font-size: 3em;
+}
+
+@media (min-width: 1001px) {
+    #top{
+        font-size: 3em;
+    }
+}
+
+@media (max-width: 1101px) and (min-width: 651px) {
+    #top{
+        font-size: 2em;
+    }
+}
+
+@media (max-width: 650px) {
+    #top{
+        font-size: 1.3em;
+        padding-top: 50%;
+    }
+}
+
+#top h1 {
+    padding-top: 20%;
+
+}
+
+top h3 {
+    color: #ccc;
+}
+
+#main {
+ padding: 100px 20%;
+ width: 60%;
+ float: left;
+ background-color: #f6f6f6;
+ border-top: 2px solid silver;
+ color: #484848;
+font-size: 1.4em;
+}
+
+@media (min-width: 1401px) {
+    #main {
+        padding: 100px 20%;
+        width: 60%;
+    }
+}
+
+@media (max-width: 1400px)
+{
+    #main {
+        padding: 100px, 10%;
+        width: 80%;
+    }
+}
+
+@media (max-width: 700px)
+{
+    #main div{
+        width: 98%!important;
+    }
+}
+
+#main div{
+    width: 48%;
+    margin-right: 2%;
+    float: left;
+}
+
+#main h2 {
+    font-size: 3em;
+}
+
+#main span {
+    color: #a0a0a0;
+}
+
+#overview {
+    float: left;
+    background-image: url(https://images.wallpaperscraft.ru/image/gitara_struny_muzykalnyj_instrument_122890_1920x1080.jpg);
+    background-blend-mode: multiply;
+    background-color: #524a08;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 100px 0;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+}
+
+#overview h2 {font-size: 4em}
+#overview h4 {color: #ccc; font-size: 1.5em}
+
+#overview .img{
+    float: left;
+    width: 30%;
+    margin-right: 5%;
+    margin-top: 50px;
+}
+
+#overview .img:nth-child(odd) {
+    margin-left: 18%;
+}
+#overview img{
+    background: #fafafa;
+    padding: 5px;
+    border: 2px solid silver;
+    float: left;
+    width: 100%;
+    max-width: 500px;
+}
+
+#overview span {
+    float: left;
+    width: 100%;
+    font-size: 2em;
+    margin-top: 10px;
+}
+@media (max-width: 700px){
+    #overview .img{
+        width: 80%!important;
+        margin-right: 0!important;
+        margin-left: 10%!important;
+    }
+}
+
+#feedback{
+    width: 100%;
+    float: left;
+    padding-bottom: 40px;
+    padding-top: 70px;
+    border-top: 4px solid #ccc;
+    background: #f4f4f4;
+}
+
+h1,h2,h3,h4,h5 {
+    font-weight: lighter;
+}
+
+#feedback h5 {font-size: 3em; color: #4f4f4f}
+
+#input {
+    margin-top: 15px;
+    width: 35%;
+    margin-left: 38%;
+    font-size: 1.1em;
+
+}
+
+#input label{
+    color: #505050;
+    cursor: pointer;
+    font-size: 1.4em;
+
+}
+
+#input label > span{
+    color: #e87e7e;
+}
+
+#input input,#input textarea{
+    margin-bottom: 10px;
+    width: 70%;
+    padding: 10px 2%;
+}
+
+#input input:focus, #input textarea:focus{
+    border-color:#3333;
+}
+
+.btn{
+    float: left;
+    border-radius: 5px;
+    padding: 5px 9px;
+    font-size: 1.2em;
+    background-color: #ec6550;
+    text-shadow: #454545 0 0 2px;
+    cursor: pointer;
+    color: #FFF;
+    font-family: 'Roboto Slab', serif;
+}
+
+.btn:hover{
+background-color: #c15443;
+}
+
+#faq {
+    background-color: #FFF;
+    border-top: 2px dashed #e4e3e3;
+    width: 100%;
+    float: left;
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+#faq div{
+    text-align: left;
+    width: 70%;
+    margin-left: 15%;
+    float: left;
+}
+
+#faq .heading{
+font-size: 1.5em;
+color: #000000;
+}
+
+#faq .p{
+    color: #454545;
+}
+
+#faq h5{
+    font-size: 3em;
+    color: #454545;
+}
+
+#contacts{
+    background-color: rgb(221, 221, 221);
+    width: 100%;
+    float: left;
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+#contacts h5 {
+    font-size: 3em;
+    color: #454545;
+}
+
+#contacts div{
+    text-align: left;
+    width: 32%;
+    margin-left: 15%;
+    float: left;
+}
+
+#video{
+    width: 100%;
+    height: 100%;
+    margin-left: 33%;
+}
+
+@media (max-width: 1000px){
+    #video {
+        width: 70%!important;
+        margin-right: 0!important;
+        margin-left: 15%!important;
+    }
+}
+
+#otstup{
+    border-top: 2px dashed #e4e3e3;
+    border-bottom: 2px linen #a0a0a0;
+}
+
+#head{
+    height: 400px;
+    background-image: url(https://i.pinimg.com/originals/4f/5f/e1/4f5fe101b4a9885ff32b79edbeda3efe.jpg);
+    background-blend-mode: multiply;
+    background-color: #524a08;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#map{
+    
+}
+

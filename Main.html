@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Проектик</title>
+    <link rel="stylesheet" href="Styles.css">
+</head>
+<body>
+    <header>
+        <div id="logo" onclick="slowScroll('#top')"> <span>GuitarShop</span></div>
+        <div id="about">
+            <a href="#" title="Информация" onclick="slowScroll('#main')">Информация</a>
+            <a href="#" onclick="slowScroll('#overview')" title="Магазин">Магазин</a>
+            <a href="#" onclick="slowScroll('#faq')" title="Ответы на вопросы">FAQ</a>
+            <a href="#" onclick="slowScroll('#contacts')" title="Контакты">Контакты</a>
+            <a href="Page1.html" onclick="slowScroll('#feedback')" title="Обратная связь">Обратная связь</a>
+        </div>
+    </header>
+<div id="top">
+    <h1>
+Пожизненная гарантия
+    </h1>
+    <h2>
+на гитару!
+    </h2>
+</div>
+
+<div id="main">
+    <div class="intro">
+        <h2>О НАС</h2>
+    </div>
+    <div class="text">
+        <span>
+                "GuitarShop - магазин гитар, музыкальных инструментов и гитарная мастерская в Москве и Санкт-Петербурге.
+
+                Все инструменты проверены, отстроены и доведены до идеала! Купите гитару с пожизненной гарантией от нашего магазина!
+        </span>
+    </div>
+</div>
+
+<div id="video_div">
+    <div id="video">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/nnY3KqAHtiI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+</div>
+
+<div id="otstup">
+    <br> <br> <br> 
+</div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+        function slowScroll(id)
+        {
+            $('html, body').animate({
+                scrollTop: $(id).offset().top
+            },500);
+        }
+        $(document).on("scroll", function ()
+        {
+            if($(window).scrollTop() === 0)
+                $("header").removeClass("fixed");
+                else 
+                $("header").attr("class","fixed");
+        });
+    </script>
+
+<div id="overview">
+        <h2>Гитары</h2>
+        <h4>только из массива</h4>
+        <div class="img">
+            <img src="https://opt-1289634.ssl.1c-bitrix-cdn.ru/upload/iblock/e70/e701138ebabbfb6b9a34f3954c4bc061.jpg?1555422823187605" alt="">
+            <span>Crafter D-6/N</span>
+        </div>
+        <div class="img">
+             <img src="https://opt-1289634.ssl.1c-bitrix-cdn.ru/upload/iblock/286/2860d2675fce5494638d408e2a41c9f8.jpg?1547824490119640" alt="">
+             <span>Sigma GMC-STE-BKB+</span>
+         </div>
+         <div class="img">
+            <img src="https://opt-1289634.ssl.1c-bitrix-cdn.ru/upload/iblock/dd4/dd42ac99252112134ff85e4bc2a2571a.jpg?1547824522106382" alt="">
+             <span>Taylor BBT Big Baby</span>
+         </div>
+         <div class="img">
+             <img src="https://opt-1289634.ssl.1c-bitrix-cdn.ru/upload/iblock/e7b/e7bcb9449836885025fa01c221a441c3.jpg?154782450137907" alt="">
+              <span>Martin DXME</span>
+         </div>
+</div>
+    
+
+<div id="faq">
+    <center><h5>Часто задаваемые вопросы</h5></center> <br> <br>
+    <div>
+        <span class="heading">Вы завтра работаете? Режим работы?</span>
+        <p>
+            Работаем :) c 11 до 20. Всегда. И в праздники тоже! (кроме 1го января). И мастерская и розничные магазины. Приходите, будем рады знакомству.
+        </p> <br>
+    </div>
+    <div>
+        <span class="heading">Можно сегодня/завтра принести гитару в ремонт?</span>
+        <p>
+            Можно! Мы принимаем гитару в ремонт в любой день :) c 11 до 20. Как быстро сможем вернуть - индивидуально обсуждается. Смотря как загружен мастер и какие работы работать будем :)
+        </p> <br>
+    </div>
+    <div>
+        <span class="heading">Сколько стоит довести/отремонтировать/посмотреть гитару?</span>
+        <p>
+            Диагностика - бесплатно. По ценам можно сказать только после нее.  Доверьтесь нашим мастерам :) Приносите гитару, они посмотрят а потом скажут, что нужно сделать, а что можно, но не обязательно. Мы не умеем дистанционно понять масштаб бедствия. По всем иным вопросам, вот телефоны мастерских: <br>
+
++7 901 755-65-27 - мастерская Москва <br>
+
++7 999 213-51-93 - мастерская спб. <br>
+
+Никакой предварительной записи у нас нет :) <br>
+        </p> <br>
+    </div>
+    <div>
+        <span class="heading">Есть ли у вас доставка в …. (Любой город/страны)</span>
+        <p>
+            Есть! Мы доставляем гитары по всему миру. <br> Цена фикс - 1500р. Курьер доставит гитару вам домой за 2-7 дней после оформления заказа. Все супер надежно, застраховано и упаковано с маниакальной осторожностью :)
+        </p> <br>
+    </div>
+    <div>
+        <span class="heading">Что с рассрочкой?</span>
+        <p>
+            Есть 2 варианта: <br>
+1.Оформить рассрочку 0% в одном из наших розничных магазинов в Москве или СПБ
+2.Оформить кредит онлайн, находясь в любом регионе! <br>
+
+Теперь подробнее про каждый! <br>
+
+В первом случае оформляется именно рассрочка. 0%! Никакой переплаты! Достаточно просто приехать к нам в магазин с паспортом и 20-тью минутами времени ;) Можно забрать гитару даже без первого взноса. <br>
+Во втором случае: <br>
+
+Можно оформить кредит онлайн из любого города России! Там тоже все очень просто, заполняете все данные онлайн, после с вами связывается сотрудник банка и назначает встречу, на которой вам просто нужно будет подписать документы. Когда документы подписаны - нам высылают имейл с сообщением «Можете отправлять инструмент»! Теперь уже мы созваниваемся с вами, расспрашиваем, как нам отстроить инструмент, слушаем пожелания, пакуем и отправляем.
+        </p> <br>
+    </div>
+</div>
+
+<div id="contacts">
+    <center><h5>Контакты</h5></center>
+
+    <div id="contacts_text">
+        <br> <br>
+Москва-акустика, м. Дмитровская. ул. Б. Новодмитровская, 36/26. Дизайн-завод Флакон, Workshop-кластер <br>
+8-495-517-43-64 <br> <br>
+Санкт-Петербург - акустика, м. Чернышевская, ул. Кирочная 3 <br>
++7-904-510-63-42 <br> <br>
+Москва-Электрогитары, м. Дмитровская. ул. Б. Новодмитровская, 36/15. Дизайн-завод Флакон, Workshop-кластер <br>
++7-977-151-84-21 <br> <br>
+Режим работы: ежедневно с 11:00 до 20:00, без выходных. <br>
+
+    </div>
+    <div id="Map">
+        <br>
+        <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A9f9ba7708758814e3c921203498c23ced867340157ddb66066aa6033e5bed03c&amp;source=constructor" width="450" height="300" frameborder="0"></iframe>
+    </div>
+</div>
+
+<div id="feedback">
+            <center><h5>Обратная связь</h5></center>
+            <form id="input">
+            <label for="name">Имя <span>*</span></label><br>
+            <input type="text" placeholder="Введите имя" name ="name" id="name"><br>
+        
+            <label for="email">Ваша почта <span>*</span></label><br>
+            <input type="email" placeholder="Введите email" name ="email" id="email"><br>
+        
+            <label for="message">Сообщение <span>*</span></label><br>
+            <input type="textarea" placeholder="Введите ваше сообщение" name ="message" id="message"><br>
+            <div id="mess_send" class="btn">Отправить</div>
+            </form>
+</div>
+</body>
+</html>
