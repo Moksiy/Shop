@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Проектик</title>
+    <link rel="stylesheet" href="Styles.css">
+</head>
+<body>
+    <header>
+        <a href="Main.html"><div id="logo" onclick="slowScroll('#top')"> <span>GuitarShop</span></div></a>
+        <div id="about">
+            <a href="#" onclick="slowScroll('#Photo')" title="Сама гитара" >Гитара</a>
+            <a href="#" onclick="slowScroll('#Description')" title="Немного о гитаре">Описание</a>
+            <a href="#" onclick="slowScroll('#Spec')" title="Параметры гитары">Спецификация</a>
+            <a href="#" onclick="slowScroll('#contacts')" title="Где можно нас найти">Контакты</a>
+            <a href="#" onclick="slowScroll('#feedback')" title="Связаться с нами">Обратная связь</a>
+        </div>
+    </header>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+        function slowScroll(id)
+        {
+            $('html, body').animate({
+                scrollTop: $(id).offset().top
+            },500);
+        }
+        $(document).on("scroll", function ()
+        {
+            if($(window).scrollTop() === 0)
+                $("header").removeClass("fixed");
+                else 
+                $("header").attr("class","fixed");
+        });
+    </script>
+    
+  
+
+ <div id="overview">
+    <div class="img">
+        <img src="https://opt-1289634.ssl.1c-bitrix-cdn.ru/upload/iblock/e7b/e7bcb9449836885025fa01c221a441c3.jpg?154782450137907" alt="">
+    </div>
+    <div class="img">
+        <img src="MARTIN.jpg" alt="">
+    </div>
+ </div>
+ <div id ="Description">
+    <center><h5>Martin DXME</h5></center> <br> <br>
+    <div>
+        <p class="PP">
+            Гитара Martin DXME впитала в себя лучшие черты модели DXM, а кроме того вы будете обеспечены самым мягким и теплым звучанием инструментов Martin с выбором между акустикой и электроакустикой    </div>
+    <div>
+            <br>
+        <p class ="PP">
+            Вот уже более полутора столетий фирма The Martin Guitar Company производит акустические инструменты, которые считаются одними из самых лучших в мире. Наверное, нет такого профессионального гитариста или даже серьезно увлекающегося любителя, который бы не слышал этого имени.  </div>
+     <br>
+     <div>
+            <br>
+        <p class ="PP">
+            Верхняя дека из цельной древесины ситхинской ели позволяет получить широкий динамический диапазон, яркий, чистый звук с великолепным резонансом.     </div>
+    <div>
+            <br>
+        <p class ="PP">
+            Гриф также выполнен из сапеле. На грифе 20 ладов, мензура – 25,5’’. Накладка из черного дерева инкрустирована акриловыми точками диаметром 4 мм.     </div>
+    <div>
+            <br>
+        <p class ="PP">
+            Гитары Martin - это живая классика. У сэра Пола Макартни, Эрика Клэптона и у многих других мировых знаменитостей имеются гитары Martin.    </div>
+ </div>
+
+ <div id ="Spec">
+    <center><h5>Спецификация</h5></center> <br> <br>
+    <div>
+        <span class="heading">Бренд: C.F. Martin & Co</span>
+    </br> 
+        <span class="heading">Тип корпуса: Dreadnought</span>
+    </br> 
+    <span class="heading">Верхняя дека: H.P.L</span>
+    </br> 
+    <span class="heading">Задняя дека: H.P.L</span>
+    </br> 
+    <span class="heading">Мензура: 25.5" (647 mm)</span>
+    </br> 
+    <span class="heading">Ширина грифа: 42,9 mm</span>
+    </br> 
+    <span class="heading">Чехол: Нет</span>
+    </br> 
+    <span class="heading">Количество струн: 6</span>
+    </br> 
+    <span class="heading">Цвет: Натуральный</span>
+    </br> 
+    <span class="heading">Материал грифа: Сапеле</span>
+    </br> 
+    <span class="heading">Крепление грифа: Вклеенный</span>
+    </br> 
+    <span class="heading">Струнодержатель: Микарта</span>
+    </br> 
+    <span class="heading">Особенности: На правую руку</span>
+    </br> 
+    <span class="heading">Накладка: Микарта</span>
+    </br> 
+    <span class="heading">Произведено: Мексика</span>
+    </br> 
+    <span class="heading">Вырез: Нет</span>
+    </br> 
+    <span class="heading">Лак: Матовый</span>
+    </br> 
+    <span class="heading">Струны: D'Addario EJ26 Custom Light (.011 - .052)</span>
+    </br> 
+    </div>
+    
+ </div>
+
+<div id="contacts">
+    <center><h5>Контакты</h5></center>
+
+    <div id="contacts_text">
+        <br> <br>
+Москва-акустика, м. Дмитровская. ул. Б. Новодмитровская, 36/26. Дизайн-завод Флакон, Workshop-кластер <br>
+8-495-517-43-64 <br> <br>
+Санкт-Петербург - акустика, м. Чернышевская, ул. Кирочная 3 <br>
++7-904-510-63-42 <br> <br>
+Москва-Электрогитары, м. Дмитровская. ул. Б. Новодмитровская, 36/15. Дизайн-завод Флакон, Workshop-кластер <br>
++7-977-151-84-21 <br> <br>
+Режим работы: ежедневно с 11:00 до 20:00, без выходных. <br>
+
+    </div>
+    <div id="Map">
+        <br>
+        <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A9f9ba7708758814e3c921203498c23ced867340157ddb66066aa6033e5bed03c&amp;source=constructor" width="450" height="300" frameborder="0"></iframe>
+    </div>
+</div>
+
+<div id="feedback">
+            <center><h5>Обратная связь</h5></center>
+            <form id="input">
+            <label for="name">Имя <span>*</span></label><br>
+            <input type="text" placeholder="Введите имя" name ="name" id="name"><br>
+        
+            <label for="email">Ваша почта <span>*</span></label><br>
+            <input type="email" placeholder="Введите email" name ="email" id="email"><br>
+        
+            <label for="message">Сообщение <span>*</span></label><br>
+            <input type="textarea" placeholder="Введите ваше сообщение" name ="message" id="message"><br>
+            <div id="mess_send" class="btn">Отправить</div>
+            </form>
+</div>
+</body>
+</html>

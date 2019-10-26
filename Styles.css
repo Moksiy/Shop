@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto|Suez+One&display=swap');
+    @import url('https://fonts.googleapis.com/css?family=Roboto|Suez+One&display=swap');
 
 * {
     margin: 0;
@@ -363,7 +363,64 @@ color: #000000;
     background-attachment: fixed;
 }
 
-#map{
-    
+#Spec {
+    background-color: #FFF;
+    border-top: 2px dashed #e4e3e3;
+    width: 100%;
+    float: left;
+    padding-top: 70px;
+    padding-bottom: 70px;
 }
+#Spec div{
+    text-align: left;
+    width: 70%;
+    margin-left: 15%;
+    float: left;
+}
+
+#Spec .heading{
+font-size: 1.5em;
+color: #000000;
+}
+
+#Spec .p{
+    color: #454545;
+}
+
+#Spec h5{
+    font-size: 3em;
+    color: #454545;
+}
+
+#Description {
+    background-color: #FFF;
+    border-top: 2px dashed #e4e3e3;
+    width: 100%;
+    float: left;
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+#Description div{
+    text-align: left;
+    width: 70%;
+    margin-left: 15%;
+    float: left;
+}
+
+#Description .heading{
+font-size: 1.5em;
+color: #000000;
+}
+
+#Description .PP{
+    color: #454545;
+    font-size: 1.2em;
+}
+
+#Description h5{
+    font-size: 3em;
+    color: #454545;
+}
+
+
 
